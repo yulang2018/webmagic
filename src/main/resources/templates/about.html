@@ -3,10 +3,12 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>羽狼博客</title>
+	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
+
+  	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
@@ -21,7 +23,6 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/themify-icons.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -38,20 +39,16 @@
 
 		<div th:insert="~{head.html}" ></div>
 
-		<header id="gtco-header" class="gtco-cover" role="banner">
+		<header id="gtco-header" class="gtco-cover gtco-cover-xs gtco-inner" role="banner">
 			<div class="gtco-container">
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 text-left">
 						<div class="display-t">
 							<div class="display-tc">
 								<div class="row">
-									<div class="col-md-5 text-center header-img animate-box">
-										<img src="images/cube.png" alt="">
-									</div>
-									<div class="col-md-7 copy animate-box">
-										<h1>生活的进步,源于不断地学习!</h1>
-										<p>做更多,比说更多重要!别介意这里只有博客!</p>
-										
+									<div class="col-md-8 animate-box">
+										<h1 class="no-margin">羽狼博客</h1>
+										<p>做有格调地博客技术分享!</p>
 									</div>
 								</div>
 							</div>
@@ -60,8 +57,6 @@
 				</div>
 			</div>
 		</header>
-
-
 		<div th:insert="~{footer.html}" ></div>
 
 	</div>
@@ -78,11 +73,14 @@
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
 	<!-- Carousel -->
 	<script src="js/owl.carousel.min.js"></script>
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
+	
 	<!-- Main -->
 	<script src="js/main.js"></script>
 

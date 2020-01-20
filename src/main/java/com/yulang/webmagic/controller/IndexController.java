@@ -5,8 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping
@@ -17,10 +15,40 @@ public class IndexController {
 
     @RequestMapping
     public String index(Model model){
-
-        model.addAttribute("articles",mapper.list());
-
         return "index";
+    }
+
+    @RequestMapping("/about")
+    public String about(){
+        return "about";
+    }
+
+    @RequestMapping("/contact")
+    public String contact(){
+        return "contact";
+    }
+    @RequestMapping("/pan-source")
+    public String panSource(Model model){
+        model.addAttribute("panList",mapper.list());
+        return "pan-source";
+    }
+
+    @RequestMapping("/java")
+    public String java(Model model){
+        model.addAttribute("panList",mapper.list());
+        return "java";
+    }
+
+    @RequestMapping("/spring")
+    public String spring(Model model){
+        model.addAttribute("panList",mapper.list());
+        return "spring";
+    }
+
+    @RequestMapping("/spring-cloud")
+    public String springCloud(Model model){
+        model.addAttribute("panList",mapper.list());
+        return "spring-cloud";
     }
 
 }

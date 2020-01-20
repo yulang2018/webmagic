@@ -14,6 +14,6 @@ public interface ArticleMapper {
             "#{content}, #{createTime, jdbcType=TIMESTAMP})" })
     public void insert(Article article);
 
-    @Select({"select * from article"})
+    @Select({"select * from article limit 10"})
     List<Article> list();
 }
