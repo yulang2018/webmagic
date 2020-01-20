@@ -1,23 +1,23 @@
 package com.yulang.webmagic.controller;
 
-import com.yulang.webmagic.dao.ArticleMapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.yulang.webmagic.dao.PanMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/article")
-public class ArticleController {
+@RequestMapping("/pan")
+public class PanController {
 
     @Autowired
-    private ArticleMapper mapper;
-
+    private PanMapper mapper;
 
     @RequestMapping
     public String list(Model model){
-        model.addAttribute("panList",mapper.list());
-        return "article";
+        model.addAttribute("panList",mapper.selectList(new QueryWrapper<>()));
+        return "pan-source";
     }
 
 }

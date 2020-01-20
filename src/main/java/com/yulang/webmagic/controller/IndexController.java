@@ -27,16 +27,14 @@ public class IndexController {
     public String contact(){
         return "contact";
     }
-    @RequestMapping("/pan-source")
-    public String panSource(Model model){
-        model.addAttribute("panList",mapper.list());
-        return "pan-source";
+    @RequestMapping("/zhuce")
+    public String panSource(){
+        return "zhuce";
     }
 
-    @RequestMapping("/java")
-    public String java(Model model){
-        model.addAttribute("panList",mapper.list());
-        return "java";
+    @RequestMapping("/login")
+    public String java(){
+        return "login";
     }
 
     @RequestMapping("/spring")
