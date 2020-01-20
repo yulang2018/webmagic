@@ -33,22 +33,22 @@
 	<div class="gtco-loader"></div>
 	<div th:insert="~{head.html}" ></div>
 	<div id="page" class="container" style="text-align: center">
-		<div style="width: 500px;margin-left: 30%;margin-top: 200px">
+		<div class="form-class">
 			<form>
-				<div class="input-group form-class">
+				<div class="input-group">
 					<span class="input-group-addon">用户名</span>
 					<input type="text" class="form-control" placeholder="用户名" aria-describedby="basic-addon1">
 				</div>
-				<div class="input-group form-class">
-					<span class="input-group-addon">密码</span>
+				<div class="input-group">
+					<span class="input-group-addon input-group-sm">密码</span>
 					<input type="text" class="form-control" placeholder="密码" aria-describedby="basic-addon1">
 				</div>
-				<div class="input-group form-class">
-					<span class="input-group-addon">手机</span>
+				<div class="input-group">
+					<span class="input-group-addon input-lg">手机</span>
 					<input type="text" class="form-control" placeholder="手机" aria-describedby="basic-addon1">
 				</div>
-				<div class="input-group form-class">
-					<span class="input-group-addon">昵称</span>
+				<div class="input-group">
+					<span class="input-group-addon input-lg">昵称</span>
 					<input type="text" class="form-control" placeholder="昵称" aria-describedby="basic-addon1">
 				</div>
 				<input class="input-lg btn-primary" type="submit" value="注册">
@@ -89,6 +89,10 @@
 
 <style>
 	.form-class{
-		margin: 10px;
+		margin-top: 200px;
+		text-align: center;
+		width: 90%;
+		margin-bottom: 10px;
+		margin-bottom: 200px;
 	}
 </style>
